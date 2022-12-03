@@ -10,11 +10,11 @@ def part_1():
             if len(line) > 1:
                 current_elf_value += int(line)
             else:
-                if current_max_value < current_elf_value and current_elf_value != 68442 and current_elf_value != 68177:
+                if current_max_value < current_elf_value:
                     current_max_value = int(current_elf_value)
                 current_elf_value = 0
 
-    return current_max_value
+
 
 def part_2():
     current_max_values = [0, 0, 0]
